@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  
+
+ <!--
+ <div class="container">
+    <div class="jumbotron" id="jumbotron1">
+      <h1> My First Bootstrap Page!</h1>
+      <h3>How awesome is this!</h3>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn More <span class="glyphicon glyphicon-record"></span> </a></p>
+    
+    </div>  
+-->
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="nav-header">
+    <a class="navbar-brand" href="#">Lucy's Angels</a>
+    
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href= "index.html">Home</a></li>
+          <li><a href= "#">About</a></li>
+          <li class = "dropdown">
+            <a href= "#" class = "dropdown-toggle" data-toggle="dropdown">Types <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href= "#">Happy Angels</a></li>
+              <li><a href= "#">Quiet Angels</a></li>
+              <li><a href= "#">Party Angels</a></li>
+              <li><a href= "#">Good Angels</a></li>
+            </ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class= "active"><a href= "form.html">Form</a></li>
+      </ul>
+    </div>    
+  </div>
+</nav>
+
+
+ <!-- Carousel BEGINS -->
+                 <!-- Indicators BEGIN -->
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="carousel-example" data-slide-to="0" class="active"></li>
+        <li data-target="carousel-example" data-slide-to="1"></li>
+        <li data-target="carousel-example" data-slide-to="2"></li>
+      </ol>
+                <!-- Indicators END -->
+                
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="first-slide" src="http://placehold.it/1424x500/F9C80E/fff" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>First Slide</h1>
+              <p>There's still time to become an astraunaut</p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="http://placehold.it/1424x500/F86624/fff" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Second Slide</h1>
+              <p>This is where dogs pull the sled.</p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="http://placehold.it/1424x500/1CCAD8/fff" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Third Slide</h1>
+              <p>Congratulations on your win.</p>
+              <p><a class="btn btn-md btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+                <!-- CONTROLS --> 
+      <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel END -->    
+     
+ <br > <br >  <br >  <br >  <br >  <br >
+      
+       <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+   <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+    </div>
+  </div>
+ 
+ <!--
+ 
+ http://www.quackit.com/html/codes/html_form_code.cfm
+ <!-- http://bootsnipp.com/snippets/featured/bootstrap-3x-contact-form-layout -->
+ -->
+ 
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+      </body>
+  
+</html>
+
+
+   
+  
